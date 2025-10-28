@@ -1,24 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Aminus Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aminu’s Portfolio</title>
+  <meta name="description" content="Welcome to Aminu Abba’s portfolio — a collection of beginner coding projects and creative experiments." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --text: #f1f5f9;
+      --accent: #7c3aed;
+      --muted: #94a3b8;
+      --card: rgba(255, 255, 255, 0.03);
+      --radius: 14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: linear-gradient(180deg, #0f172a, #1e293b);
+      color: var(--text);
+      padding: 40px 20px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    h2 {
+      color: var(--muted);
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin: 30px 0;
+    }
+
+    section {
+      background: var(--card);
+      padding: 24px;
+      border-radius: var(--radius);
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    section h4 {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    section img {
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      margin-top: 12px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #a78bfa;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer nav a {
+      margin: 0 10px;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
-    <h1>Aminus Portfolio</h1>
-    <h2>im learining coding</h2>
-    <hr>
-    <a href="./public/movie-ranking.html">Movie ranking project</a>
-    <h3>The best movies According to Aminu</h3>
-    <h4>my top 3 movies of all time</h4>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="3 best movie ranking">
-    <p>
-        <h2><a href="./public/birthday-invite.html">birthday-invite</a></h2>
-        <h6>its my birthday</h6>
-        <img src="./assets/images/birthday-invite.png" height="200" alt="birthday list">
-        <hr>
+  <main>
+    <header>
+      <h1>Aminu’s Portfolio</h1>
+      <h2>Learning coding, one project at a time</h2>
+    </header>
+
+    <section>
+      <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+      <h4>The best movies according to Aminu</h4>
+      <p>Here are my top 3 favorite movies of all time — a simple HTML project that displays my personal movie ranking.</p>
+      <img src="./assets/images/movie-ranking.png" alt="Preview of Aminu’s movie ranking project" height="200">
+    </section>
+
+    <section>
+      <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
+      <h4>It’s my birthday!</h4>
+      <p>This project is a fun invitation card I coded using basic HTML — complete with images, links, and event details.</p>
+      <img src="./assets/images/birthday-invite.png" alt="Preview of Aminu’s birthday invite project" height="200">
+    </section>
+
+    <footer>
+      <nav>
         <a href="./public/about.html">About Me</a>
         <a href="./public/contact.html">Contact Me</a>
-    </p>
+      </nav>
+      <p>&copy; 2025 Aminu Abba. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>
